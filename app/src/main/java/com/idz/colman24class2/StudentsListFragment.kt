@@ -19,7 +19,6 @@ class StudentsListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true) // enable menu
     }
 
     override fun onCreateView(
