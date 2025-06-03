@@ -87,4 +87,11 @@ class StudentDetailFragment : Fragment() {
             it.background = null
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        student = Model.shared.students[studentIndex] // refresh from model
+        loadStudentData() // update UI fields
+    }
+
 }
