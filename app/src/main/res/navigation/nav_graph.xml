@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/studentsListFragment">
+
+    <fragment
+        android:id="@+id/studentsListFragment"
+        android:name="com.idz.colman24class2.StudentsListFragment"
+        android:label="fragment_students_list"
+        tools:layout="@layout/fragment_students_list" >
+        <action
+            android:id="@+id/action_studentsListFragment_to_newStudentFragment"
+            app:destination="@id/newStudentFragment" />
+        <action
+            android:id="@+id/action_studentsListFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newStudentFragment"
+        android:name="com.idz.colman24class2.NewStudentFragment"
+        android:label="Add Student"
+        tools:layout="@layout/fragment_add_student" />
+
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.idz.colman24class2.StudentDetailFragment"
+        android:label="Student Details"
+        tools:layout="@layout/fragment_student_details" >
+        <action
+            android:id="@+id/action_studentDetailFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editStudentFragment"
+        android:name="com.idz.colman24class2.EditStudentFragment"
+        android:label="Edit Student"
+        tools:layout="@layout/fragment_edit_student" />
+
+</navigation>
