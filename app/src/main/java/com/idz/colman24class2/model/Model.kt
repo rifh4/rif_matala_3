@@ -8,6 +8,9 @@ class Model private constructor() {
         val shared = Model()
     }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 }

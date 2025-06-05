@@ -1,5 +1,9 @@
 package com.idz.colman24class2
 
+<<<<<<< HEAD
+=======
+import android.content.Intent
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 import android.os.Bundle
 import android.util.Log
 import android.view.*
@@ -18,7 +22,10 @@ class StudentsListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         setHasOptionsMenu(true)
+=======
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
     }
 
     override fun onCreateView(

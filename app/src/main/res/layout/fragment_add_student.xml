@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,12 +12,16 @@
     android:layout_height="match_parent"
     tools:context=".NewStudentFragment">
 
+<<<<<<< HEAD
     <!-- Avatar Image -->
+=======
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="428dp"
         android:layout_height="278dp"
         android:scaleType="centerInside"
+<<<<<<< HEAD
         android:contentDescription="Avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.647"
@@ -22,20 +30,37 @@
         app:srcCompat="@drawable/avatar" />
 
     <!-- Name -->
+=======
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/avatar" />
+
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Name:"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
+=======
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 
     <EditText
         android:id="@+id/add_student_activity_name_edit_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:ems="10"
         android:inputType="textPersonName"
         android:layout_marginStart="8dp"
@@ -45,19 +70,37 @@
         app:layout_constraintStart_toEndOf="@id/textView" />
 
     <!-- ID -->
+=======
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="ID:"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@id/textView" />
+=======
+        android:layout_marginTop="30dp"
+        android:text="ID:"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 
     <EditText
         android:id="@+id/add_student_activity_id_edit_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:ems="10"
         android:inputType="text"
         android:layout_marginStart="8dp"
@@ -166,11 +209,21 @@
         app:layout_constraintTop_toBottomOf="@id/birthTimeInputLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/add_student_activity_cancel_button" />
+=======
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 
     <Button
         android:id="@+id/add_student_activity_cancel_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Cancel"
         android:layout_marginTop="24dp"
         android:layout_marginStart="8dp"
@@ -180,3 +233,127 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cancel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/add_student_activity_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/add_student_activity_save_button" />
+
+    <Button
+        android:id="@+id/add_student_activity_save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_student_activity_cancel_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/add_student_activity_save_message_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_student_activity_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Phone number:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/add_student_activity_id_edit_text" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Address:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/textViewBirthDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Birth Date (YYYY-MM-DD):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textViewBirthDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+    <TextView
+        android:id="@+id/textViewBirthTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Birth Time (HH:mm):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirthDate" />
+
+    <EditText
+        android:id="@+id/editTextBirthTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/textViewBirthTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirthDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74

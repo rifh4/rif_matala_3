@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/studentsListFragment"
         android:name="com.idz.colman24class2.StudentsListFragment"
+<<<<<<< HEAD
         android:label="Students List"
+=======
+        android:label="fragment_students_list"
+>>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
         tools:layout="@layout/fragment_students_list" >
         <action
             android:id="@+id/action_studentsListFragment_to_newStudentFragment"
