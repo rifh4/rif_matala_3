@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Toolbar at top -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/EditStudentToolbar"
         android:layout_width="0dp"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Name Label -->
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
@@ -28,7 +26,6 @@
         app:layout_constraintTop_toBottomOf="@id/EditStudentToolbar"
         android:layout_marginTop="16dp" />
 
-    <!-- Name Input -->
     <EditText
         android:id="@+id/EditStudentName"
         android:layout_width="0dp"
@@ -39,7 +36,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewName" />
 
-    <!-- ID Label -->
     <TextView
         android:id="@+id/textViewID"
         android:layout_width="wrap_content"
@@ -49,7 +45,6 @@
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewName" />
 
-    <!-- ID Input -->
     <EditText
         android:id="@+id/EditStudentID"
         android:layout_width="0dp"
@@ -60,7 +55,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewID" />
 
-    <!-- Phone Label -->
     <TextView
         android:id="@+id/textViewPhone"
         android:layout_width="wrap_content"
@@ -70,7 +64,6 @@
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewID" />
 
-    <!-- Phone Input -->
     <EditText
         android:id="@+id/EditStudentPhone"
         android:layout_width="0dp"
@@ -81,7 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewPhone" />
 
-    <!-- Address Label -->
     <TextView
         android:id="@+id/textViewAddress"
         android:layout_width="wrap_content"
@@ -91,7 +83,6 @@
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewPhone" />
 
-    <!-- Address Input -->
     <EditText
         android:id="@+id/EditStudentAddress"
         android:layout_width="0dp"
@@ -102,7 +93,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewAddress" />
 
-    <!-- Birth Date Label -->
     <TextView
         android:id="@+id/textViewBirthDate"
         android:layout_width="wrap_content"
@@ -112,7 +102,6 @@
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewAddress" />
 
-    <!-- Birth Date Input -->
     <EditText
         android:id="@+id/EditStudentBirthDate"
         android:layout_width="0dp"
@@ -126,7 +115,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewBirthDate" />
 
-    <!-- Birth Time Label -->
     <TextView
         android:id="@+id/textViewBirthTime"
         android:layout_width="wrap_content"
@@ -136,7 +124,6 @@
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewBirthDate" />
 
-    <!-- Birth Time Input -->
     <EditText
         android:id="@+id/EditStudentBirthTime"
         android:layout_width="0dp"
@@ -150,7 +137,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewBirthTime" />
 
-    <!-- Buttons -->
 
     <Button
         android:id="@+id/EditStudentSaveButton"

@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".StudentsListFragment">
 
-<<<<<<< HEAD
-=======
-    <!-- TODO: Update blank fragment layout -->
->>>>>>> 91e5cd40ecc7070be9853ece5bb7aab29b192f74
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/students_list_activity_recycler_view"
