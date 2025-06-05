@@ -6,24 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/EditStudentToolbar"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:titleTextColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name:"
-        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/EditStudentToolbar"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp" />
 
     <EditText
@@ -31,9 +21,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toEndOf="@id/textViewName"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewName" />
 
     <TextView
@@ -41,18 +31,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ID:"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/textViewName"
-        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:id="@+id/EditStudentID"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toEndOf="@id/textViewID"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewID" />
 
     <TextView
@@ -60,18 +50,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Phone:"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/textViewName"
-        app:layout_constraintTop_toBottomOf="@id/textViewID" />
+        app:layout_constraintTop_toBottomOf="@id/textViewID"
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:id="@+id/EditStudentPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="phone"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toEndOf="@id/textViewPhone"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewPhone" />
 
     <TextView
@@ -79,99 +69,96 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Address:"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/textViewName"
-        app:layout_constraintTop_toBottomOf="@id/textViewPhone" />
+        app:layout_constraintTop_toBottomOf="@id/textViewPhone"
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:id="@+id/EditStudentAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toEndOf="@id/textViewAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewAddress" />
 
     <TextView
         android:id="@+id/textViewBirthDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Birth Date:"
         android:layout_marginTop="16dp"
+        android:text="Birth Date:"
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewAddress" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/EditStudentBirthDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:focusable="false"
         android:clickable="true"
-        android:hint="YYYY-MM-DD"
-        android:inputType="date"
-        android:layout_marginEnd="8dp"
+        android:inputType="none"
         app:layout_constraintStart_toEndOf="@id/textViewBirthDate"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewBirthDate" />
 
     <TextView
         android:id="@+id/textViewBirthTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Birth Time:"
         android:layout_marginTop="16dp"
+        android:text="Birth Time:"
         app:layout_constraintStart_toStartOf="@id/textViewName"
         app:layout_constraintTop_toBottomOf="@id/textViewBirthDate" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/EditStudentBirthTime"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:focusable="false"
         android:clickable="true"
-        android:hint="HH:mm"
-        android:inputType="time"
-        android:layout_marginEnd="8dp"
+        android:inputType="none"
         app:layout_constraintStart_toEndOf="@id/textViewBirthTime"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBaseline_toBaselineOf="@id/textViewBirthTime" />
-
 
     <Button
         android:id="@+id/EditStudentSaveButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintTop_toBottomOf="@id/textViewBirthTime"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/EditStudentCancelButton" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/EditStudentCancelButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:id="@+id/EditStudentCancelButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Cancel"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintTop_toBottomOf="@id/textViewBirthTime"
         app:layout_constraintStart_toEndOf="@id/EditStudentSaveButton"
-        app:layout_constraintEnd_toStartOf="@id/EditStudentDeleteButton" />
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@id/EditStudentDeleteButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:id="@+id/EditStudentDeleteButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintTop_toBottomOf="@id/textViewBirthTime"
         app:layout_constraintStart_toEndOf="@id/EditStudentCancelButton"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
